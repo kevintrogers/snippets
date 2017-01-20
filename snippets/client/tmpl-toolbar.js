@@ -13,6 +13,7 @@ function addSnippet() {
     var txtNode = $('#txtAdd');
     if (!txtNode || !txtNode.val()) return;
     Snippets.insert({
+        owner: Meteor.userId(),
         text: txtNode.val()
     });
     txtNode.val('');
