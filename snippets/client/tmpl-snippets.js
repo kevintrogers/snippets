@@ -1,5 +1,5 @@
 Template.snippets.helpers({
-    snippets: function() {
+    snippets: function(){
         return Snippets.find().fetch();
     }
 });
